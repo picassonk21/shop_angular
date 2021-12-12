@@ -1,0 +1,14 @@
+<div class="product">
+
+  <div class="name">{{ name }}</div>
+  <div class="category">{{ category }}</div>
+  <div class="description">{{ description }}</div>
+  <div class="price">{{ price }}</div>
+  <input type="checkbox" [checked]="isAvailable">
+
+  <button
+    *ngIf="isBuyBtnNeeded"
+    class="buy-btn"
+    (click)="onAddToCart(name)">buy</button>
+
+</div>

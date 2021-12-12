@@ -1,0 +1,13 @@
+<div class="product-list-wrapper">
+  <div class="product-list-title">List of products:</div>
+  <div class="product-list">
+    <app-product
+      *ngFor="let product of products"
+      [name]="product.name"
+      [description]="product.description"
+      [price]="product.price"
+      [category]="product.category"
+      [isAvailable]="product.isAvailable"
+      [isBuyBtnNeeded]="true"></app-product>
+  </div>
+</div>

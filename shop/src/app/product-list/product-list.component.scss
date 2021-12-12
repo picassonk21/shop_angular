@@ -1,0 +1,11 @@
+.product-list {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
